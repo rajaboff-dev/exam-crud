@@ -13,18 +13,18 @@ function DashboardHead() {
         <h1>Dashboard</h1>
         <AddUserModal/>
       </div>
-      <div className='flex items-end justify-start gap-5'>
-        <div>
+      <div className='flex items-end justify-start w-full gap-10'>
+        <div className='w-1/6'>
           <h1>Ism</h1>
-          <Input placeholder={'Ismi bo\'yicha qidirish'} onChange={(e) => userContext.setNameSearchValue(e.target.value)} value={userContext.nameSearchValue}/>
+          <Input placeholder={'Ismi bo\'yicha qidirish'} onChange={(e) => userContext.setNameSearchValue(e.target.value)} value={userContext.nameSearchValue} className='bg-white'/>
         </div>
-        <div>
+        <div className='w-1/6'>
           <h1>Telefon raqam</h1>
-          <Input placeholder={'Telefon raqami bo\'yicha qidirish'} onChange={(e) => userContext.setPhoneNumberSearchValue(e.target.value)} value={userContext.phoneNumberSearchValue}/>
+          <Input placeholder={'Telefon raqami bo\'yicha qidirish'} onChange={(e) => userContext.setPhoneNumberSearchValue(e.target.value)} value={userContext.phoneNumberSearchValue} className='bg-white'/>
         </div>
-        <div>
+        <div className='w-1/6'>
           <h1>Manzil</h1>
-          <Input placeholder={'Manzil bo\'yicha qidirish'} onChange={(e) => userContext.setAddressSearchValue(e.target.value)} value={userContext.addressSearchValue}/>
+          <Input placeholder={'Manzil bo\'yicha qidirish'} onChange={(e) => userContext.setAddressSearchValue(e.target.value)} value={userContext.addressSearchValue} className='bg-white'/>
         </div>
       </div>
     </div>

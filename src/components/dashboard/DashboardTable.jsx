@@ -26,7 +26,7 @@ function DashboardTable() {
     }
   }, [isError]);
   return (
-    <div className='shadow-md px-3 py-2 rounded-xl'>
+    <div className='shadow-md px-3 py-2 rounded-xl bg-white'>
       <Table>
         <TableHeader>
           <TableRow>

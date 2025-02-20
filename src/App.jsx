@@ -6,7 +6,7 @@ function App() {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <div>
+      <div className='bg-slate-50'>
         <Dashboard/>
         <Toaster richColors={true} position={'top-right'}  />
       </div>
