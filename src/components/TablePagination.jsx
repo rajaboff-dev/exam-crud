@@ -10,9 +10,7 @@ function TablePagination({ current, pageSize, total, setCurrentPage }) {
   const onPageChange = (page) => {
     setCurrentPage(() => page);
     const params = new URLSearchParams();
-    console.log('Page', page);
-    console.log('Current page state: ', current)
-    params.set('page', current);
+    params.set('page', page);
     navigate(`${location.pathname}?${params.toString()}`)
   }
 
