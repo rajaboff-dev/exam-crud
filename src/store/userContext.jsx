@@ -7,7 +7,7 @@ const UserContext = createContext()
 const UserProvider = ({ children }) => {
   const [searchParams] = useSearchParams()
   const [currentPage, setCurrentPage] = useState(searchParams.get('page') || 1);
-  const [perPage] = useState(1);
+  const [perPage] = useState(10);
   const [nameSearchValue, setNameSearchValue] = useState("");
   const [phoneNumberSearchValue, setPhoneNumberSearchValue] = useState("");
   const [addressSearchValue, setAddressSearchValue] = useState("");
